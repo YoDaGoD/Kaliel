@@ -508,7 +508,8 @@ main.svelte-bu2rnl>p.svelte-bu2rnl {
 ul.svelte-5bm8t6.svelte-5bm8t6.svelte-5bm8t6 {
     margin-top: 0;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
