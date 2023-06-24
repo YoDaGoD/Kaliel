@@ -1,0 +1,326 @@
+/* Invites Redesign */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
+/* Setting Window Icons */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+
+:root {
+  --version: "1.0";
+  --settingsiconssize: 18px;
+  --settingsiconsgap: 14px;
+}
+
+/* User Popout by Couve Theme */
+:root .userPopoutOuter-1OHwPL {
+  max-height: unset !important;
+  box-shadow: unset !important;
+  border-radius: 8px;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutInner-nv9Y92::before {
+  max-height: unset !important;
+}
+:root .userPopoutOuter-1OHwPL .bannerSVGWrapper-2CLfzN {
+  overflow: visible;
+  min-height: 150px !important;
+  contain: unset;
+}
+:root .userPopoutOuter-1OHwPL .bannerSVGWrapper-2CLfzN .banner-1YaD3N {
+  position: absolute;
+  height: 180px;
+  border-radius: 8px 8px 0 0;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.7607843137), rgba(0, 0, 0, 0.7607843137));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 50% 100%, 0 calc(100% - 25px));
+}
+:root .userPopoutOuter-1OHwPL .bannerSVGWrapper-2CLfzN .banner-1YaD3N.bannerPremium-kkSkPv {
+  background-color: transparent !important;
+}
+:root .userPopoutOuter-1OHwPL .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 60"] > foreignObject {
+  transform: translateY(-47px);
+}
+:root .userPopoutOuter-1OHwPL .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] > foreignObject {
+  transform: translateY(-17px);
+}
+:root .userPopoutOuter-1OHwPL .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 90"] > foreignObject {
+  transform: translateY(-35px);
+}
+:root .userPopoutOuter-1OHwPL .bannerSVGWrapper-2CLfzN > foreignObject {
+  mask: none;
+}
+:root .userPopoutOuter-1OHwPL .profileBadges-2pItdR {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 340px;
+  max-width: unset;
+  padding: 0;
+  justify-content: center;
+  background-color: transparent;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz {
+  position: static;
+  background-color: transparent;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz > .divider-2dDziJ {
+  display: none;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1,
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  width: 340px;
+  box-sizing: border-box;
+  text-align: center;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1 .discrimBase-v65kTs,
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 .discrimBase-v65kTs {
+  color: white;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .scroller-15bIdk::-webkit-scrollbar {
+  display: none;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny {
+  z-index: 1;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny .assetsLargeImageSpotify-17ME3M {
+  border-radius: 8px !important;
+  margin-left: 6px;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny .content-tXPNDw {
+  margin-right: 8px;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny .button-TGAkj4 {
+  background-color: var(--main-color);
+  opacity: 1;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny .platformIcon-k3yytQ {
+  display: none;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny .timeBarUserPopoutV2-32DL06 {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 70px;
+  border-radius: 8px;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny .timeBarUserPopoutV2-32DL06 .bar-1GpknY {
+  border-radius: 8px;
+  height: 100%;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny .timeBarUserPopoutV2-32DL06 .barInner-3dHef4 {
+  border-radius: 8px 0 0 8px;
+  opacity: 0.2;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .activity-3uaYny .timeBarUserPopoutV2-32DL06 > :last-child {
+  display: none;
+}
+:root .userPopoutOuter-1OHwPL .userPopoutOverlayBackground-3A0Pcz .input-2g-os5 {
+  background-color: transparent !important;
+}
+:root .userPopoutOuter-1OHwPL.userProfileOuterThemed-2BgJCM .usernameSection-3FppkT {
+  left: 4px;
+}
+:root .userPopoutOuter-1OHwPL .avatarWrapper-eenWra {
+  top: 15px !important;
+  left: calc(50% - 40px);
+}
+:root .userPopoutOuter-1OHwPL .avatarWrapper-eenWra .avatarHint-k7pYop {
+  top: 0;
+  left: 0;
+  border-radius: calc(var(--avatar-radius) * 2) !important;
+}
+:root .userPopoutOuter-1OHwPL .avatarWrapper-eenWra .avatarHint-k7pYop foreignObject {
+  mask: none !important;
+}
+:root .userPopoutOuter-1OHwPL .avatarWrapper-eenWra .avatarHint-k7pYop foreignObject .avatarHintInner-2HUAWj {
+  font-size: 0;
+  text-transform: none;
+}
+:root .userPopoutOuter-1OHwPL .avatarWrapper-eenWra .avatarHint-k7pYop foreignObject .avatarHintInner-2HUAWj::after {
+  white-space: normal;
+  text-align: center;
+  content: var(--avatar-hint-text);
+  color: var(--avatar-hint-color);
+  font-size: var(--avatar-hint-size);
+  font-family: var(--avatar-hint-font);
+}
+:root .userPopoutOuter-1OHwPL .mask-1y0tyc foreignObject {
+  border-radius: calc(var(--avatar-radius) * 2) !important;
+}
+:root .userPopoutOuter-1OHwPL .mask-1y0tyc circle,
+:root .userPopoutOuter-1OHwPL .mask-1y0tyc rect[fill=black] {
+  display: none;
+}
+
+.panels-3wFtMD {
+    margin: 5px;
+    margin-top: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .2s;
+}
+.panels-3wFtMD:hover {
+    box-shadow: var(--light-elevation-border),var(--elevation-high);
+}
+.panels-3wFtMD .container-YkUktl {
+    flex-direction: column;
+    height: 88px;
+    padding: 8px;
+    background: var(--background-floating) !important;
+    margin-bottom: -36px;
+    transition: .2s;
+}
+.panels-3wFtMD:hover .container-YkUktl {
+    margin-bottom: 0;
+}
+.panels-3wFtMD .avatarWrapper-1B9FTW {
+    margin-right: 0;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    transition: .15s;
+}
+
+div[class*="container-1zzFcN"] { 
+  background: var(--background-floating) !important;
+  }
+
+div[class*="wrapper-3Un6-K avatar-1EWyVD"] { 
+  margin-left: 30%;
+  }
+
+/*Bot Tag Icon*/
+.botTag-7aX5WZ:not(.stafftags):not(.botTagOP-3pUTXu) {
+  padding: 0 !important;
+  background-color: transparent;
+}
+
+.botTag-7aX5WZ:not(.stafftags):not(.botTagOP-3pUTXu)::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C14.761 2 17 4.238 17 7V9H7V7C7 4.238 9.238 2 12 2ZM10.5 5.5C10.5 6.329 11.172 7 12 7C12.828 7 13.5 6.329 13.5 5.5C13.5 4.671 12.828 4 12 4C11.172 4 10.5 4.671 10.5 5.5ZM23 22H17L19 19V12H17V18C17 18.553 16.552 19 16 19H14L15 22H9L10 19H8C7.448 19 7 18.553 7 18V12H5V19L7 22H1L3 19V12C3 10.896 3.897 10 5 10H19C20.103 10 21 10.896 21 12V19L23 22ZM13 14C13 14.553 13.448 15 14 15C14.552 15 15 14.553 15 14C15 13.447 14.552 13 14 13C13.448 13 13 13.447 13 14Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+  background-size: contain;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+
+.botTag-7aX5WZ:not(.stafftags):not(.botTagOP-3pUTXu) span {
+  display: none;
+}
+
+/* Timestamp when hover */
+[class*=timestampInline-] {
+  opacity: 0;
+  transition: 0.2s opacity ease-in-out;
+}
+
+[class^=message-]:hover [class*=timestampInline-] {
+  opacity: 1;
+}
+
+/*search bar minimized until hover*/
+.search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
+  width: 27px;
+  transition: var(--transitionspeed);
+  background-color: transparent;
+}
+.search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ {
+  width: 170px;
+  background-color: var(--background-tertiary);
+}
+.search-2Mwzzq:not(.open-1F8u2c) .iconContainer-1RqWJj {
+  transform: scale(1.3);
+  transition: var(--transitionspeed);
+}
+.search-2Mwzzq:not(.open-1F8u2c):hover .iconContainer-1RqWJj {
+  transform: scale(1);
+}
+.search-2Mwzzq:not(.open-1F8u2c) .icon-18rqoe {
+  color: var(--text-normal);
+}
+.search-2Mwzzq:not(.open-1F8u2c):hover .icon-18rqoe {
+  color: var(--text-muted);
+}
+
+/* Remastered Connect Issue Popup */
+.container-2RRFHK {
+    background: transparent;
+    pointer-events: none;
+}
+.container-2RRFHK .anchor-1MIwyf { pointer-events: auto; }
+.container-2RRFHK .content-3AIQZv .text-2bYgPB {
+    display:none;
+}
+.container-2RRFHK .ready-3BZNWT {
+    position: absolute;
+    bottom: 44px;
+    right: 244px;
+    z-index: 1;
+}
+
+.container-2RRFHK img, .container-2RRFHK video {
+    width: 32px;
+    height: 32px;
+}
+.container-2RRFHK .problems-CvGwpb {
+    padding: 8px 16px;
+    bottom: 18px;
+    left: unset;
+    right: 18px;
+    width:fit-content;
+    height:fit-content;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    -webkit-box-shadow: var(--elevation-stroke), var(--elevation-medium);
+    box-shadow: var(--elevation-stroke), var(--elevation-medium);
+}
+
+/* Text in Settings*/
+[class^="socialLinks-"] + [class^="info-"] > span:first-child::before {
+    content: "Hydra " var(--version);
+    position: relative;
+    top: 0px;
+    display: block;
+    color: white;
+}
+
+/* edited text time */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
+        content: " (" attr(aria-label) ")";
+        color: var(--text-muted);
+        font-size: 0.625rem;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: lowercase;
+}
+
+.edited-1v5nT8:not(.message-translate-indicator) {
+    display: none;
+}
+
+/* Emoji Auto-Fill Animation */
+.base-2v-uc0 {
+    transition: all 0.5s;
+}
+.base-2v-uc0:hover {
+    transition: all 0s;
+    transform: scale(1.02);
+}
+
+/* Messages Slide In Chat */
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.message-2CShn3 {
+  animation: slide-up 0.4s ease;
+}
