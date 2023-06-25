@@ -597,9 +597,9 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 .wordmark-2u86JB::after{
     content: "Hydra";
     font-size: 15px;
-    margin-left: 620px;
     position: relative;
     font-family: 'Belanosima', sans-serif;
+    top: -1px;
 }
 
 .wordmark-2u86JB > svg {
