@@ -1,3 +1,11 @@
+/**
+ * @name Hydra
+ * @author sotaq
+ * @version 1.0
+ * @description Just a theme made for fun based on Couve
+ * @source https://github.com/NYRI4/Couve
+*/
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
 
@@ -428,11 +436,6 @@
 div[class*="container-1zzFcN"] { 
   background: var(--background-floating) !important;
   }
-
-div[class*="wrapper-3Un6-K avatar-1EWyVD"] { 
-  margin-left: 30%;
-  }
-
 /*Bot Tag Icon*/
 .botTag-7aX5WZ:not(.stafftags):not(.botTagOP-3pUTXu) {
   padding: 0 !important;
