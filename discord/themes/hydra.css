@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+
 /* Invites Redesign */
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
 /* Setting Window Icons */
@@ -7,6 +10,12 @@
   --version: "1.0";
   --settingsiconssize: 18px;
   --settingsiconsgap: 14px;
+  --transitionspeed: 0.25s;
+}
+
+/* Fixing FUCKED Fonts */
+[class*="headerText-"]{
+   overflow-y: hidden;
 }
 
 /* User Popout by Couve Theme */
@@ -565,3 +574,157 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
     d: path("m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2");
 }
 
+/* Search Bar in DM Menu */
+:root .searchBar-3TnChZ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  background: linear-gradient(180deg, var(--background-secondary), transparent);
+  box-shadow: none;
+}
+:root .searchBar-3TnChZ .searchBarComponent-3N7dCG {
+  background: var(--background-primary);
+  border-radius: 20px;
+  font-size: 10px;
+  text-align: center;
+} 
+:root .privateChannels-oVe7HL > .scroller-WSmht3 {
+  padding-top: 48px;
+}
+
+/* Custom Title Bar */
+.wordmark-2u86JB::after{
+    content: "Hydra";
+    font-size: 15px;
+    margin-left: 620px;
+    position: relative;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.wordmark-2u86JB > svg {
+    display: none;
+}
+
+/* ????? Change server selection */
+.pill-2RsI5Q {
+  width: 100%;
+  overflow: visible !important;
+}
+.pill-2RsI5Q [style="opacity: 1; height: 40px; transform: none;"] {
+  right: 0;
+  height: 48px !important;
+  background-color: var(--background-secondary);
+  width: 60px;
+  border-radius: 30% 0 0 30%;
+  filter: drop-shadow(0px 14px 8px rgba(0,0,0,0.1));
+  pointer-events: none;
+  animation: pillAnimateIn 0.3s backwards cubic-bezier(0, 0, 0, 1.4);
+}
+.pill-2RsI5Q [style="opacity: 1; height: 40px; transform: none;"]::after,
+.pill-2RsI5Q [style="opacity: 1; height: 40px; transform: none;"]::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 15px 15px 0 15px var(--background-secondary);
+}
+.pill-2RsI5Q [style="opacity: 1; height: 40px; transform: none;"]::before {
+  top: 100%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 100px;
+  box-shadow: 15px -15px 0 15px var(--background-secondary);
+}
+@keyframes pillAnimateIn {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+}
+
+/* Hide New Message Stuff When Unfocused */
+/* Red New Message Bar */
+html:not(.app-focused) .isUnread-3Lojb- {
+    border-color: transparent
+}
+.isUnread-3Lojb- {
+    transition: .15s
+}
+
+/* New Message Bar */
+html:not(.app-focused) .newMessagesBar-1hF-9G {
+    opacity: 0
+}
+.newMessagesBar-1hF-9G {
+    transition: .15s
+}
+
+/* Disabling Nitro Button on DM */
+.privateChannels-oVe7HL [href="/store"] {
+display: none;
+}
+
+/* Rounded Context Menu */
+.menu-2TXYjN { 
+    border-radius: 10px;
+}
+
+/* remove login artwork */
+svg.artwork-L5TAwQ {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*Remove Invite Button next to channel name*/
+.actionIcon-2sw4Sl {
+    display: none;
+}
+
+/* Blurred Context Menus */
+[class^=menu-],[class^=submenu-] {
+  background: none;
+}
+[class^=submenu-] {
+  margin: 0 -8px;
+}
+.theme-dark [class^=menu-]::after,.theme-dark [class^=submenu-]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+.theme-light [class^=menu-]::after,.theme-light [class^=submenu-]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background: rgba(245, 245, 245, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+[class^=backdrop-] ~ .theme-light[class*=layer-]>[class^=menu-] {
+  background: rgba(245, 245, 245, 0.7);
+}
+[class^=backdrop-] ~ .theme-dark[class*=layer-]>[class^=menu-] {
+  background: rgba(10, 10, 10, 0.7);
+}
+[class^=backdrop-] ~ [class*=layer-]>[class^=menu-]::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+.section-3FmfOT, .divider-1tWBgZ, .scroller-1jBQYo {
+  z-index: 2;
+}
